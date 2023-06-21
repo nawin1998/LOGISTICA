@@ -9,6 +9,11 @@
 }
 :root{
     --h1-font:30px;
+    --main-color:#ff3e41;
+    --second-color:#51cfed;
+    --form-color:#f8f2f0;
+    --hover1:#ff5b5e;
+    --hover2:#6bd6f0;
 }
 html{
     scroll-padding-top: 80px;
@@ -89,13 +94,18 @@ header{
     top: 50px;
     left: 36%;
     border-radius: 10px;
+    background-color: #ffff;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 .downer li{
     margin-top: 10px;
+   
 }
 .downer a:hover{
-    border-bottom: #000000;
-    color: aliceblue;
+    
+    background: #e9ecef;
+    border-top: none;
+    color: black;
 }
 /* toggle */
 .checkbtn {
@@ -128,7 +138,8 @@ header{
     left: 0;
     width: 200%;
     height: 100%;
-    transition: 2s linear;
+    transition: 0.5s linear;
+    
 }
 .slide{
     width: 50%;
@@ -138,6 +149,7 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    
 }
 .slide::before{
     content: "";
@@ -159,9 +171,11 @@ header{
     font-family: var(--font-family1);
 }
 .slidedata h1{
+    position: relative;
+    top: 20px;
     color: #ffffff;
     font-family: var(--font-family2);
-    font-size: 90px;
+    font-size: 70px;
     font-weight: bold;
 }
 .colores{
@@ -169,6 +183,7 @@ header{
 }
 .slidedata p{
     position: relative;
+    top: 30px;
     width: 60%;
     font-size: 18px;
     font-weight: bold;
@@ -176,30 +191,41 @@ header{
 }
 .slidedata .b2{
     position: relative;
-    height: 40px;
-    width: 150px;
-    top: 25px;
-    font-size: 20px;
+    height: 55px;
+    width: 170px;
+    top: 55px;
+    font-size: 16px;
+    font-weight: 600;
     background-color: #ff3e41;
     border: none;
+    transition: all 1s;
+    color: #ffff;
+}
+.slidedata .b2:hover{
+    background-color: var(--hover1);
 }
 .slidedata .b3{
     position: relative;
-    height: 40px;
-    width: 150px;
-    top: 25px;
+    height: 55px;
+    width: 170px;
+    top: 55px;
     left: 20px;
     border: none;
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 600;
     background-color: #19a4d8;
+    transition: all 1s;
+    color: #ffff;
+}
+
+.slidedata .b3:hover{
+    background-color: var(--hover2);
 }
 .slide1{
-    background-image: url(images/carousel-1.jpg);
-    opacity: 1;
+    background-image: linear-gradient(rgba(7, 7, 7, 0.621),rgba(0, 0, 0, 0.621)),url(images/carousel-1.jpg);
 }
 .slide2{
-    background-image: url(images/carousel-2.jpg);
-    opacity: 1;
+    background-image: linear-gradient(rgba(7, 7, 7, 0.621),rgba(0, 0, 0, 0.621)),url(images/carousel-2.jpg);
 }
 .slider .arrows{
     position: absolute;
@@ -210,6 +236,9 @@ header{
     border: 3px solid #fffefe;
     border-radius: 50%;
     font-size: 20px;
+}
+.slider .arrows:hover{
+    background-color: #ff3e41;
 }
 .slider .arrows label{
     display: none;
@@ -324,13 +353,20 @@ input[type="radio"]{
 }
 .b4{
     position: relative;
-    height: 50px;
-    width: 150px;
+    height: 55px;
+    width: 170px;
     top: 100px;
     left: 25px;
     border: none;
     border-radius: 3px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffff;
     background-color: #ff3e41;
+    transition: all 1s;
+}
+.b4:hover{
+    background-color: var(--hover1);
 }
 /* some fact */
 .factcontainer{
@@ -402,7 +438,7 @@ input[type="radio"]{
     height: 34rem;
     width: 40%;
     top: 2rem;
-    left: 10%;
+    left: 13%;
 }
 .facted{
     display: block;
@@ -443,7 +479,7 @@ input[type="radio"]{
     left: 20px;
     height: 160px;
     width: 250px;
-    background-color: #19a4d8;
+    background-color: #51cfed;
 }
 .facted2 i{
     position: relative;
@@ -473,7 +509,7 @@ input[type="radio"]{
     left: 40px;
     height: 160px;
     width: 250px;
-    background-color: #008000;
+    background-color: #198754;
 }
 .facted3 i{
     position: relative;
@@ -538,7 +574,8 @@ input[type="radio"]{
     height: 100%;
     width: 31%;
     margin-left: 1.8%;
-    background-color: #eef0f2;
+    background-color: #ffff;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 .ser-cardes img{
     position: relative;
@@ -584,18 +621,26 @@ input[type="radio"]{
     height: 40px;
     width: 80px;
     top: 384px;
-    left: 55px;
+    left: 35px;
     color: #eef0f2;
     background-color: #ff3e41;
     border: none;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
 }
+.iconic:hover{
+    background-color: var(--second-color);
+}
+.hoved:hover{
+    background-color: var(--second-color);
+}
 .ser-cardes:hover .hoved{
     display: block;
+    background-color: var(--main-color);
 }
 .ser-cardes1:hover .hoved{
     display: block;
+    background-color: var(--main-color);
 }
 .ser-card2{
     position: relative;
@@ -609,7 +654,8 @@ input[type="radio"]{
     height: 100%;
     width: 31%;
     margin-left: 1.8%;
-    background-color: #eef0f2;
+    background-color: #ffff;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 .ser-cardes1 img{
     position: relative;
@@ -740,7 +786,7 @@ input[type="radio"]{
     position: relative;
     height: 34rem;
     width: 40%;
-    left: 10%;
+    left: 9%;
     top: 4rem;
 }
 .featured2 img{
@@ -783,7 +829,8 @@ input[type="radio"]{
     height: 100%;
     width: 30%;
     margin-left: 30px;
-    background-color: #eef0f2;
+    background-color: #ffff;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 .planed1 h3{
     position: relative;
@@ -920,8 +967,8 @@ hr{
     height: 28rem;
     width: 40%;
     top: 8rem;
-    left: 10%;
-    background-color: #f8f2f0;
+    left: 9%;
+    background-color: var(--form-color);
     padding: 2rem;
 }
 .ros1{
@@ -977,6 +1024,10 @@ textarea{
     background-color: #ff3e41;
     border: none;
     border-radius: 5px;
+    transition: all 1s;
+}
+.res:hover{
+    background-color: var(--hover1);
 }
 .form-control::placeholder{
     position: relative;
@@ -1026,12 +1077,14 @@ textarea{
     width: 23%;
     height: 400px;
     margin-left: 22px;
-    background-color: #eef0f2;
+    background-color: #ffff;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 .teames img{
     position: relative;
     height: 65%;
     width: 100%;
+    padding: 1rem;
 }
 .teames h1{
     position: relative;
@@ -1076,9 +1129,14 @@ textarea{
 }
 .hoved3 i{
     position: relative;
-    top: 7px;
+    top: 2px;
     left: 5px;
     margin-left: 10px;
+    padding: 8px 0;
+}
+.hoved3 i:hover{
+    background-color: var(--second-color);
+    
 }
 .teames:hover .hoved3{
     display: block;
@@ -1111,9 +1169,10 @@ textarea{
     width: 420px;
     border-radius: 10px;
     margin-top: 40px;
-    margin-left: 37%;
+    margin-left: 36%;
     overflow: hidden;
-    background-color: #eef0f2;
+    background-color: #ffff;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 .redders{
     height: 200px;
@@ -1166,7 +1225,7 @@ textarea{
     z-index: 1;
 }
 .manual-btn{
-    border: 3px solid #06a3da;
+    border: 3px solid var(--main-color);
     padding: 5px;
     cursor: pointer;
     border-radius: 10px;

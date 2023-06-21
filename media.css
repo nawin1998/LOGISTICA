@@ -1,7 +1,6 @@
 @media only screen and (min-width:200px) and (max-width:991px){
     .navcontainer{
-        position: sticky;
-        top: 0;
+        position: fixed;
         width: 100%;
         border-top: 5px solid #ff3e41;
     }
@@ -82,12 +81,13 @@
     #check:checked ~ ul{
         display: inline-block;
     }
-    body{
+    html{
         overflow-x: hidden;
     }
     /* home */
     .Homecontainer{
         height: 37.2rem;
+        width: 100%;
     }
     .slidedata{
         position: absolute;
@@ -132,7 +132,8 @@
     }
     /* about */
     .aboutcontainer{
-        height: 60rem;
+        height: 63rem;
+        width: 100%;
     }
     .aboutsection{
         position: relative;
@@ -155,9 +156,10 @@
     .abo-content{
         position: relative;
         height: 30rem;
-        width: 90%;
-        left: 5%;
+        width: 100%;
         top: 30px;
+        left: 2%;
+        padding: 0 1rem;
     }
     .abo-content h3{
         position: relative;
@@ -172,11 +174,15 @@
     .abo-content p{
         position: relative;
         top: 90px;
-        width: 90%;
+        width: 100%;
+        
         
     }
     .abou{
         display: block;
+    }
+    .abou-1{
+        width: 100%;
     }
     .abou-1 i{
         position: relative;
@@ -190,8 +196,9 @@
     }
     .abou-1 p{
         position: relative;
+        width: 100%;
         top: 50px;
-        font-size: 15px;
+        font-size: 18px;
     }
     .abou-2 i{
         position: relative;
@@ -205,28 +212,30 @@
     }
     .abou-2 p{
         position: relative;
+        width: 100%;
         top: 90px;
-        font-size: 15px;
+        font-size: 18px;
     }
     .abo-content .b4{
         position: relative;
         height: 30px;
         width: 100px;
         font-size: 15px;
-        top: 155px;
+        top: 225px;
         left: 33px;
     }
     /* some facts */
     .factcontainer{
         height: 65rem;
+        width: 100%;
     }
     .factsection{
         display: block;
     }
     .facting{
         position: relative;
-        width: 90%;
-        left: 5%;
+        width: 100%;
+        left: 7%;
         height: 24rem;
     }
     .facting h1{
@@ -241,6 +250,7 @@
     .facting p{
         position: relative;
         top: 10px;
+        font-size: 18px;
     }
     .factes h3{
         width: 100%;
@@ -276,6 +286,7 @@
     /* services */
     .servicecontainer{
         height: 186rem;
+        width: 100%;
     }
     .heading4 h1{
         font-size: 25px;
@@ -307,13 +318,14 @@
     /* features */
     .featurecontainer{
         height: 68rem;
+        width: 100%;
     }
     .featuresection{
         display: block;
     }
     .featured1{
         position: relative;
-        width: 90%;
+        width: 100%;
         left: 7%;
     }
     .featured1 h1{
@@ -324,28 +336,28 @@
     }
     .feat2 p{
         top: 5px;
-        font-size: 15px;
+        font-size: 18px;
     }
     .feat4 h2{
         font-size: 21px;
     }
     .feat4 p{
         top: 5px;
-        font-size: 15px;
+        font-size: 18px;
     }
     .feat6 h2{
         font-size: 21px;
     }
     .feat6 p{
         top: 5px;
-        font-size: 15px;
+        font-size: 18px;
     }
     .featured2{
         position: relative;
         height: 20rem;
         width: 90%;
         left: 5%;
-        top: 90px;
+        top: 100px;
     }
     .featured2 figure img{
         height: 100%;
@@ -354,6 +366,7 @@
     /* plan */
     .plancontainer{
         height: 100rem;
+        
     }
     .heading6{
         position: relative;
@@ -372,17 +385,21 @@
         bottom: 50px;
         margin-top: 30px;
     }
+    .hoved1{
+        top: 351px;
+    }
     /* quote */
     .quotecontainer{
         height: 70rem;
+        width: 100%;
     }
     .quotesection{
         display: block;
     }
     .quoting{
         position: relative;
-        width: 90%;
-        left: 5%;
+        width: 100%;
+        left: 7%;
         top: 5px;
     }
     .quoting h1{
@@ -429,6 +446,7 @@
     /* team */
     .teamcontainer{
         height: 115rem;
+        
     }
     .heading7 h1{
         font-size: 25px;
@@ -446,6 +464,7 @@
     /* testimonial */
     .testicontainer{
         height: 38rem;
+        width: 100%;
     }
     .heading7 h1{
         font-size: 25px;
@@ -457,7 +476,8 @@
         margin-top: 60px;
         margin-left: 13%;
         overflow: hidden;
-        background-color: #d5e9f6;
+        background-color: #ffff;
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
     }
     .redders{
         height: 200px;
@@ -541,7 +561,7 @@
     /* footer */
     .footcontainer{
         height: 86rem;
-
+        width: 100%;
     }
     .footed{
         display: block;
@@ -582,7 +602,7 @@
        
     }
     .cont-4 .rown1{
-        left: 14.5rem;
+        left: 13rem;
     }
     .rown2{
         
